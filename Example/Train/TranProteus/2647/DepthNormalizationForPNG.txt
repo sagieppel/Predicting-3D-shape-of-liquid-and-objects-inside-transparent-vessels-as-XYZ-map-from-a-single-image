@@ -1,0 +1,6 @@
+File_Name	Scale	Min_Dist	(Real_Depth=PNG_Depth*Scale+Min_Dist)
+VesselWithContent_Frame_0_Depth.png	1.4691176470588236	173.875
+Content_Frame_0_Depth.png	1.4691176470588236	173.875
+Plane_Frame_0_Depth.png	1.4691176470588236	173.875
+EmptyVessel_Frame_0_Depth.png	1.4691176470588236	173.875
+VesselOpening_Depth.png	0.23627450980392156	265.25
