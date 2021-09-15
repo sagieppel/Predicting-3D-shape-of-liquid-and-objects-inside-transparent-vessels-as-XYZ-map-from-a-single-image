@@ -9,6 +9,7 @@ See paper []() for more details
 
 The same code with train model included (run out of the box) could be download from: (Here)[] (for only liquid), and (here)[] (For liquid and objects)
 
+These code was trained using the TransProteus dataset that can be downloaded from: [Full Dataset 1](https://e.pcloud.link/publink/show?code=kZfx55Zx1GOrl4aUwXDrifAHUPSt7QUAIfV),  [Full DataSet Link2](https://icedrive.net/1/6cZbP5dkNG), [Subset](https://zenodo.org/record/5508261#.YUGsd3tE1H4)
 ![](/Figure1.jpg)
 Figure 1. Structure of the net for predicting 3D and 2D segments from the image. XYZ maps are represented as and BGR image with blue, red, and green channels corresponds to the X,Y,Z coordinates of the pixel.
 
@@ -40,8 +41,9 @@ Other optional parameters are in the input parameters section of the script.
 
 # For training and evaluating download TransProteus and LabPics
 
-1. Download and extract the TransProteus dataset from (here partial)[] or (here partial)[] or (here full)[] 
-2. Optional: download and extract the LabPics dataset from [here](https://zenodo.org/record/4736111#.YTkdcFtE1H4) or [here](https://www.kaggle.com/sagieppel/labpics-chemistry-labpics-medical)
+1. Download and extract the TransProteus dataset from:[Full Dataset 1](https://e.pcloud.link/publink/show?code=kZfx55Zx1GOrl4aUwXDrifAHUPSt7QUAIfV),  [Full DataSet Link2](https://icedrive.net/1/6cZbP5dkNG), [Subset](https://zenodo.org/record/5508261#.YUGsd3tE1H4)
+
+3. Optional: download and extract the LabPics dataset from [here](https://zenodo.org/record/4736111#.YTkdcFtE1H4) or [here](https://www.kaggle.com/sagieppel/labpics-chemistry-labpics-medical)
 
 ## Training
 
