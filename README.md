@@ -30,10 +30,10 @@ This network was run with Python 3.88 [Anaconda](https://www.anaconda.com/downlo
 
 # Prediction: running the trained net on  a single image
 
-1. Train net or download code with pre-trained net weight from [here]() or [here](Just for liquids).
+1. Train net or download code with pre-trained net weight from [1](https://icedrive.net/0/42jdtddE6S), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck).
 2. Open RunOnImage.py
 3. Set image path to InputImage parameter
-4. Set the path to the trained net weights  file in: Trained_model_path  (If you downloaded the code with the pre-train network from [here]() the model path is already set) 
+4. Set the path to the trained net weights  file in: Trained_model_path  (If you downloaded the code with the pre-train network from, the model path is already set) 
 5. Run script to get prediction display on the screen.
 Additional optional parameters: 
 UseGPU: decide whether to use GPU hardware (True/False).
@@ -63,9 +63,9 @@ Note that this dictionary can get several folders, and each folder can be added 
 
 ## Evaluating 
 
-1. Train net or download code with pre-trained net weight from [here]() or [here]()(Just for liquids).
+1. Train net or download code with pre-trained net weight from: [1](https://icedrive.net/0/42jdtddE6S), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck)..
 2. Open EvaluateModel.py
-3. Set a path to the trained net weights  file in: Trained_model_path  (If you downloaded the code with the pre-train network from [here]() the model path is already set) 
+3. Set a path to the trained net weights  file in: Trained_model_path  (If you downloaded the code with the pre-train network from  the model path is already set) 
 4. Set Test data folder  path to the  TestFolder parameter (This can be either the RealSense real images or one of the TransProteus virtual test datasets, both supply with TransProteus)
 5. If using the RealSense (real photos) test set,  set parameter UseRealSenseDataset=True else set it to False
 6. Run the script
