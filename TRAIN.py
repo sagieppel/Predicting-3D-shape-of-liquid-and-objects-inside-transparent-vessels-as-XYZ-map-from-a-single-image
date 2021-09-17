@@ -22,9 +22,9 @@ UseLabPicsDataSet=True # Use the LabPics dataset for training True/False
 TransProteusFolder={}
 TransProteusFolder["Liquid"]=r"Example/Train/TranProteus//"
 # TransProteusFolder["ObjectContent"]=r"TranProteus/Training/ObjectContent/"
-# TransProteusFolder["ObjectContent2"]=r"TranProteus/Training/ObjectContent/"
+# TransProteusFolder["ObjectContent2"]=r"TranProteus/Training/SingleObjectContent/"
 # TransProteusFolder["LiquidContent"]=r"TranProteus/Training/LiquidContent/"
-# TransProteusFolder["LiquidFlat"]=r"TranProteus/Training/FlatLiquidAll/"
+# TransProteusFolder["LiquidFlat"]=r"TranProteus/Training/FlatSurfaceLiquids/"
 
 
 #--------------LabPics dataset folder (if LabPics used for trainig)----------------------------------------------------------
