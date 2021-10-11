@@ -45,7 +45,7 @@ MaxPixels=800*800*2# Max pixels in a batch (not in image), reduce to solve out i
 MaxBatchSize=6# Max images in batch
 
 Trained_model_path="" # Path of trained model weights If you want to return to trained model, else if there is no pretrained mode this should be =""
-Learning_Rate=1e-4 # intial learning rate
+Learning_Rate=1e-5 # intial learning rate
 TrainedModelWeightDir="logs/" # Output Folder where trained model weight and information will be stored
 
 TrainLossTxtFile=TrainedModelWeightDir+"TrainLoss.txt" #Where train losses statitics will be writen
