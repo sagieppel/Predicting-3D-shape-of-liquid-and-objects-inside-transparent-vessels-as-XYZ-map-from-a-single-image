@@ -7,7 +7,7 @@ The 3D model prediction is independent of the image source and camera used.
 The 3D prediction is scale and translation invariant which means that the 3D shape of the object is predicted, but the scale of the model and its position (translation) is arbitrary.
 See paper []() for more details
 
-The same code with train model included (run out of the box) could be download from: (Here)[] (for only liquid), and (here)[] (For liquid and objects)
+The same code with train model included (run out of the box) could be download from: [1](https://icedrive.net/0/42jdtddE6S), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck)
 
 These code was trained using the TransProteus dataset that can be downloaded from: [Full Dataset 1](https://e.pcloud.link/publink/show?code=kZfx55Zx1GOrl4aUwXDrifAHUPSt7QUAIfV),  [Full DataSet Link2](https://icedrive.net/1/6cZbP5dkNG), [Subset](https://zenodo.org/record/5508261#.YUGsd3tE1H4)
 ![](/Figure1.jpg)
@@ -63,7 +63,7 @@ Note that this dictionary can get several folders, and each folder can be added 
 
 ## Evaluating 
 
-1. Train net or download code with pre-trained net weight from: [1](https://icedrive.net/0/42jdtddE6S), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck)..
+1. Train net or download code with pre-trained net weight from: [1](https://icedrive.net/0/42jdtddE6S), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck).
 2. Open EvaluateModel.py
 3. Set a path to the trained net weights  file in: Trained_model_path  (If you downloaded the code with the pre-train network from  the model path is already set) 
 4. Set Test data folder  path to the  TestFolder parameter (This can be either the RealSense real images or one of the TransProteus virtual test datasets, both supply with TransProteus)
