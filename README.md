@@ -5,13 +5,19 @@ Given an image containing transparent containers, predict the 3d model and 2D se
 The prediction is made in the form of an XYZ map that predicts X,Y,Z coordinates per pixel. 
 The 3D model prediction is independent of the image source and camera used.
 The 3D prediction is scale and translation invariant which means that the 3D shape of the object is predicted, but the scale of the model and its position (translation) is arbitrary.
-See paper []() for more details
+See paper [Predicting 3D shapes, masks, and properties of materials, liquids, and objects inside transparent containers, using the TransProteus CGI datase]
+(https://arxiv.org/pdf/2109.07577.pdf) for more details
 
 The same code with train model included (run out of the box) could be download from: [1](https://icedrive.net/0/42jdtddE6S), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck)
 
 These code was trained using the TransProteus dataset that can be downloaded from: [Full Dataset 1](https://e.pcloud.link/publink/show?code=kZfx55Zx1GOrl4aUwXDrifAHUPSt7QUAIfV),  [Full DataSet Link2](https://icedrive.net/1/6cZbP5dkNG), [Subset](https://zenodo.org/record/5508261#.YUGsd3tE1H4)
 ![](/Figure1.jpg)
 Figure 1. Structure of the net for predicting 3D and 2D segments from the image. XYZ maps are represented as and BGR image with blue, red, and green channels corresponds to the X,Y,Z coordinates of the pixel.
+
+Videos can of results:
+https://www.youtube.com/watch?v=EbVvEYespII
+https://www.youtube.com/watch?v=zWJJyjmsBko
+https://www.youtube.com/watch?v=JC55VmYHB_s
 
 
   
