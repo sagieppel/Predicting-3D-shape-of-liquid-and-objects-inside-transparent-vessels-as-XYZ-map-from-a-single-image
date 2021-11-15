@@ -15,9 +15,13 @@ These code was trained using the TransProteus dataset that can be downloaded fro
 Figure 1. Structure of the net for predicting 3D and 2D segments from the image. XYZ maps are represented as and BGR image with blue, red, and green channels corresponds to the X,Y,Z coordinates of the pixel.
 
 Videos can of results:
+
 https://www.youtube.com/watch?v=EbVvEYespII
+
 https://www.youtube.com/watch?v=zWJJyjmsBko
+
 https://www.youtube.com/watch?v=JC55VmYHB_s
+
 https://zenodo.org/record/5697212#.YZKKOLtyZH4
 
 
