@@ -8,7 +8,7 @@ The 3D prediction is scale and translation invariant which means that the 3D sha
 See paper [Predicting 3D shapes, masks, and properties of materials, liquids, and objects inside transparent containers, using the TransProteus CGI datase]
 (https://arxiv.org/pdf/2109.07577.pdf) for more details
 
-The same code with train model included (run out of the box) could be download from: [1](https://zenodo.org/record/5696254#.YZKKQ7tyZH4) [2](https://icedrive.net/0/42jdtddE6S), [3](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck)
+The same code with train model included (run out of the box) could be download from: [1](https://icedrive.net/0/42jdtddE6S), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck), [3](https://zenodo.org/record/5696254#.YZKKQ7tyZH4)
 
 These code was trained using the TransProteus dataset that can be downloaded from: [Full Dataset 1](https://e.pcloud.link/publink/show?code=kZfx55Zx1GOrl4aUwXDrifAHUPSt7QUAIfV),  [Full DataSet Link2](https://icedrive.net/1/6cZbP5dkNG), [Subset](https://zenodo.org/record/5508261#.YUGsd3tE1H4)
 ![](/Figure1.jpg)
