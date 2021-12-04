@@ -36,7 +36,7 @@ For training the net, an Nvidia GPU is needed (the net was trained on RTX 3090)
 Create a environment with the required dependencies ([Pytorch](https://pytorch.org/), torchvision, scipy and OpenCV, Open3D): *conda env create -f environment.yml*
 
 ## Software:
-This network was run with Python 3.88 [Anaconda](https://www.anaconda.com/download/) with  [Pytorch 1.8](https://pytorch.org/) and OpenCV* package.
+This network was run with Python 3.88 [Anaconda](https://www.anaconda.com/download/) with  [Pytorch 1.8](https://pytorch.org/), (open3d)[http://www.open3d.org/] and OpenCV* package.
 * Installing opencv for conda can usually be done using: pip install opencv-python or conda install opencv
 
 # Prediction: running the trained net on  a single image
