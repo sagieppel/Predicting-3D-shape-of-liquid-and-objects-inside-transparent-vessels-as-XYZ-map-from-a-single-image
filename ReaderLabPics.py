@@ -157,7 +157,7 @@ class Reader:
         Msk["ROI"][FilledMask[:,:,2]>15] = 0
         Msk["ROI"][MaterialScattered[:,:,2]>0] = 0
         Msk["ContentMaskClean"] = (FilledMask[:, :, 0]>0).astype(np.float32)*Msk["VesselMask"]
-       # Msk["ContentMaskClean"][PartsMask[:,:,0] > 0).astype(np.float32) * Msk["VesselMask"]]=1
+        Msk["ContentMaskClean"][PartsMask[:,:,0] > 0).astype(np.float32) * Msk["VesselMask"]]=1
 
         # -----------------------------------Augment Crop and resize-----------------------------------------------------------------------------------------------------
         #  self.before = Maps['VesselWithContentRGB'].copy()
