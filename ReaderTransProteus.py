@@ -98,11 +98,11 @@ class Reader:
             # =======================Crop image to fit batch size===================================================================================
 
             if w > Wb:
-                X0 = int((w - Wb)/2-0.1)#np.random.randint(w - Wb)
+                X0 = np.random.randint(w - Wb)# int((w - Wb)/2-0.1)#
             else:
                 X0 = 0
             if h > Hb:
-                Y0 = int((h - Hb)/2-0.1)#np.random.randint(h - Hb)
+                Y0 = np.random.randint(h - Hb)#int((h - Hb)/2-0.1)#
             else:
                 Y0 = 0
 
