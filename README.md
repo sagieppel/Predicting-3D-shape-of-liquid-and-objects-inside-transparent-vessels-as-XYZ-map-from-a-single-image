@@ -6,7 +6,7 @@ The prediction is made in the form of an XYZ map that predicts X,Y,Z coordinates
 The 3D model prediction is independent of the image source and camera used.
 The 3D prediction is scale and translation invariant which means that the 3D shape of the object is predicted, but the scale of the model and its position (translation) is arbitrary.
 See paper [Predicting 3D shapes, masks, and properties of materials, liquids, and objects inside transparent containers, using the TransProteus CGI datase]
-(https://arxiv.org/pdf/2109.07577.pdf) for more details
+(https://pubs.rsc.org/en/content/articlelanding/2022/dd/d1dd00014d) for more details
 
 The same code with train model included (run out of the box) could be download from: [1](https://icedrive.net/s/bY1QhVjgawkgWabXVb9vuZ2fXbfC), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck), [3](https://zenodo.org/record/5868475#.YeZ5d_tyZH5)
 
