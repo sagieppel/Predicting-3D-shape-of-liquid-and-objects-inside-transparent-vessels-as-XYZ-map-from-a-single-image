@@ -8,7 +8,7 @@ The 3D prediction is scale and translation invariant which means that the 3D sha
 See paper [Predicting 3D shapes, masks, and properties of materials, liquids, and objects inside transparent containers, using the TransProteus CGI datase]
 (https://arxiv.org/pdf/2109.07577.pdf) for more details
 
-The same code with train model included (run out of the box) could be download from: [1](https://icedrive.net/s/bY1QhVjgawkgWabXVb9vuZ2fXbfC), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck), [3](https://zenodo.org/record/5696254#.YZKKQ7tyZH4)
+The same code with train model included (run out of the box) could be download from: [1](https://icedrive.net/s/bY1QhVjgawkgWabXVb9vuZ2fXbfC), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck), [3](https://zenodo.org/record/5868475#.YeZ5d_tyZH5)
 
 These code was trained using the TransProteus dataset that can be downloaded from: [Full Dataset 1](https://e.pcloud.link/publink/show?code=kZfx55Zx1GOrl4aUwXDrifAHUPSt7QUAIfV),  [Full DataSet Link2](https://icedrive.net/1/6cZbP5dkNG), [Subset](https://zenodo.org/record/5508261#.YUGsd3tE1H4)
 ![](/Figure1.jpg)
@@ -41,7 +41,7 @@ This network was run with Python 3.88 [Anaconda](https://www.anaconda.com/downlo
 
 # Prediction: running the trained net on  a single image
 
-1. Train net or download code with pre-trained net weight from [1](https://icedrive.net/s/bY1QhVjgawkgWabXVb9vuZ2fXbfC), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck).
+1. Train net or download code with pre-trained net weight from [1](https://icedrive.net/s/bY1QhVjgawkgWabXVb9vuZ2fXbfC), [2](https://zenodo.org/record/5868475#.YeZ5d_tyZH5).
 2. Open RunOnImage.py
 3. Set image path to InputImage parameter
 4. Set the path to the trained net weights  file in: Trained_model_path  (If you downloaded the code with the pre-train network from, the model path is already set) 
@@ -74,7 +74,7 @@ Note that this dictionary can get several folders, and each folder can be added 
 
 ## Evaluating 
 
-1. Train net or download code with pre-trained net weight from: [1](https://icedrive.net/s/bY1QhVjgawkgWabXVb9vuZ2fXbfC), [2](https://e.pcloud.link/publink/show?code=XZEI55ZNk2cL139W78o1FMk35VeG5j9Jzck).
+1. Train net or download code with pre-trained net weight from: [1](https://icedrive.net/s/bY1QhVjgawkgWabXVb9vuZ2fXbfC), [2](https://zenodo.org/record/5868475#.YeZ5d_tyZH5).
 2. Open EvaluateModel.py
 3. Set a path to the trained net weights  file in: Trained_model_path  (If you downloaded the code with the pre-train network from  the model path is already set) 
 4. Set Test data folder  path to the  TestFolder parameter (This can be either the RealSense real images or one of the TransProteus virtual test datasets, both supply with TransProteus)
@@ -85,7 +85,7 @@ For other parameters, see the Input parameters section.
 
 
 ## More Info 
-See paper []() For more details
+See paper [Predicting 3D shapes, masks, and properties of materials inside transparent containers, using the TransProteus CGI dataset](https://pubs.rsc.org/en/content/articlelanding/2022/dd/d1dd00014d) For more details
 
 
 
