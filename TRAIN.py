@@ -21,20 +21,20 @@ UseLabPicsDataSet=True # Use the LabPics dataset for training True/False
 
 TransProteusFolder={}
 TransProteusFolder["Liquid"]=r"Example/Train/TranProteus//"
-# TransProteusFolder["ObjectContent"]=r"TranProteus/Training/ObjectContent/"
-# TransProteusFolder["ObjectContent2"]=r"TranProteus/Training/SingleObjectContent/"
-# TransProteusFolder["LiquidContent"]=r"TranProteus/Training/LiquidContent/"
-# TransProteusFolder["LiquidFlat"]=r"TranProteus/Training/FlatSurfaceLiquids/"
+# TransProteusFolder["ObjectContent"]=r"/TranProteus/Training/ObjectContent/"
+# TransProteusFolder["ObjectContent2"]=r"/TranProteus/Training/SingleObjectContent/"
+# TransProteusFolder["LiquidContent"]=r"/TranProteus/Training/LiquidContent/"
+# TransProteusFolder["LiquidFlat"]=r"/TranProteus/Training/FlatSurfaceLiquids/"
 
 
 #--------------LabPics dataset folder (if LabPics used for trainig)----------------------------------------------------------
 if UseLabPicsDataSet:
     LabPicsFolder = {}
     LabPicsFolder["Chemistry"] = r"Example/Train/LabPics//"
-    # LabPicsFolder["Medical"] = r"LabPics/LabPicsMedical/LabPicsMedical/Train//"
-    # LabPicsFolder["Chemical"] = r"LabPics/LabPicsChemistry/LabPicsChemistry/Train//"
-    # LabPicsFolder["Chemical2"] = r"LabPics/LabPicsChemistry/LabPicsChemistry/Train//"
-    # LabPicsFolder["Chemical3"] = r"LabPics/LabPicsChemistry/LabPicsChemistry/Train//"
+    # LabPicsFolder["Medical"] = r"LabPics/LabPicsMedical/Train//"
+    # LabPicsFolder["Chemical"] = r"Datasets/LabPics/LabPicsChemistry/Train//"
+    # LabPicsFolder["Chemical2"] = r"Datasets/LabPics/LabPicsChemistry/Train//"
+    # LabPicsFolder["Chemical3"] = r"Datasets/LabPics/LabPicsChemistry/Train//"
 
 #...............Other training paramters..............................................................................
 
@@ -125,7 +125,7 @@ for itr in range(InitStep,MAX_ITERATION): # Main training loop
         print("Reader type",readertype)
         GT = LPReaders[readertype].LoadBatch() # Read batch
 
-    #***************************************************************************************************
+    ######3******************************visuallize reader*********************************************************************
     # batchSize=GT["VesselWithContentRGB"].shape[0]
     # for i in range(batchSize):
     #    for nm in GT:
@@ -140,7 +140,7 @@ for itr in range(InitStep,MAX_ITERATION): # Main training loop
     #              print(nm,"New", tmIm.max(), tmIm.min())
     #              if np.ndim(tmIm)==2: tmIm=cv2.cvtColor(tmIm, cv2.COLOR_GRAY2BGR)
     #          vis.show(np.hstack([tmIm,GT["VesselWithContentRGB"][i].astype(np.uint8)]) ,nm+ " Max=" + str(GT[nm][i].max()) + " Min=" + str(GT[nm][i].min()))
-#*****************************************************************************
+######*****************************************************************************
 
     print("RUN PREDICITION")
 
@@ -244,7 +244,7 @@ for itr in range(InitStep,MAX_ITERATION): # Main training loop
         print("model saved")
         np.save(TrainedModelWeightDir+"/Learning_Rate.npy",Learning_Rate)
         np.save(TrainedModelWeightDir+"/itr.npy",itr)
-    if itr % 60000 == 0 and itr>0: #Save model weight once every 60k steps permenant file
+    if itr % 10000 == 0 and itr>0: #Save model weight once every 60k steps permenant file
         print("Saving Model to file in "+TrainedModelWeightDir+"/"+ str(itr) + ".torch")
         torch.save(Net.state_dict(), TrainedModelWeightDir + "/" + str(itr) + ".torch")
         print("model saved")
