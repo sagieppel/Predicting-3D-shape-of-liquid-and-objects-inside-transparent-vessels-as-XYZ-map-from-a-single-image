@@ -163,11 +163,11 @@ class Reader:
 
 
                       GridY = (list(range(hpx))-shift_y-hpx/2)*sensor_width/MaxDimPix
-                      GridY = np.transpose(np.tile(GridY, (hpx,1)))
+                      GridY = np.transpose(np.tile(GridY, (wpx,1)))
 
 
                       GridX = (list(range(wpx))+shift_x-wpx/2)*sensor_width/MaxDimPix # Might be +shift x https://www.rojtberg.net/1601/from-blender-to-opencv-camera-and-back/
-                      GridX = np.tile(GridX, (wpx, 1))
+                      GridX = np.tile(GridX, (hpx, 1))
 
 
 
