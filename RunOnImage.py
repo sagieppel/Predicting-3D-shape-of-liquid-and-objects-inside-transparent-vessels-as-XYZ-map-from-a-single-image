@@ -23,8 +23,10 @@ XYZ2Color={"VesselXYZ":[255,0,0],"ContentXYZ":[0,255,0],"VesselOpening_XYZ":[0,0
 #******************************Create and Load neural net**********************************************************************************************************************
 
 Net=NET_FCN.Net(MaskList=MaskList,XYZList=XYZList) # Create net and load pretrained
-Net.load_state_dict(torch.load(Trained_model_path))
-Net=Net.cuda()
+if UseGPU==True:
+    Net.load_state_dict(torch.load(Trained_model_path))
+else:
+    Net.load_state_dict(torch.load(Trained_model_path,map_location=torch.device('cpu')))
 Net.eval()
 #*********************************Read image and resize*******************************************************************************
 
